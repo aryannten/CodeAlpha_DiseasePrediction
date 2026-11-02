@@ -242,6 +242,10 @@ jupyter notebook notebooks/disease_prediction.ipynb
 ### 6. Launch the Streamlit Diagnostic Web App
 Interact with the real trained models using an intuitive web interface:
 ```bash
+# Recommended command (bypasses Windows PATH issues):
+python -m streamlit run app.py
+
+# Or if Scripts is in your PATH:
 streamlit run app.py
 ```
 *The app will open automatically in your browser at `http://localhost:8501`.*
@@ -290,3 +294,4 @@ print(f"Disease Probability: {probability:.2%}")
 **Aryan**  
 GitHub: [@aryannten](https://github.com/aryannten)  
 *Built as part of the CodeAlpha Machine Learning Internship — Task 4: Disease Prediction from Medical Data.*
+
